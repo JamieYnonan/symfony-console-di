@@ -1,0 +1,14 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Console\:
+        resource: '../../../Console/*'
+        exclude: '../../../Console/Infrastructure/Console/*'
+
+    Console\Infrastructure\Console\Command\:
+        resource: '../../../Console/Infrastructure/Console/Command/*'
+        public: true
+        tags: [name: 'console.command']

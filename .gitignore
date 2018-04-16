@@ -1,0 +1,4 @@
+.idea
+docker/*
+!docker/docker-compose.yml
+!docker/cli

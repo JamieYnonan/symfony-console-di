@@ -1,0 +1,34 @@
+{
+    "name": "jamieynonan/console",
+    "description": "Example symfony console + dependency injection",
+    "type": "project",
+    "require": {
+        "php": "^7.1",
+        "symfony/console": "^4.0",
+        "symfony/dependency-injection": "^4.0",
+        "ramsey/uuid": "^3.7",
+        "symfony/config": "^4.0",
+        "symfony/yaml": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jamie Ynonan",
+            "email": "jamiea31@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Console\\": "src/Console"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Console\\": "tests/Console"
+        }
+    }
+}

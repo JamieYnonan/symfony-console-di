@@ -1,0 +1,8 @@
+vendor/
+.idea
+build
+composer.lock
+out
+gen
+composer.phar
+*.iml

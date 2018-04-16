@@ -1,0 +1,23 @@
+Console\Domain\Model\User\User:
+  type: entity
+  id:
+    id:
+      type: uuid
+      generator:
+        strategy: NONE
+  table: users
+  repositoryClass: Console\Infrastructure\Domain\Model\User\DoctrineUserRepository
+  embedded:
+    name:
+      class: Console\Domain\Model\User\UserName
+      columnPrefix: false
+    email:
+      class: Console\Domain\Model\User\UserEmail
+      columnPrefix: false
+  fields:
+    updatedAt:
+      type: datetime
+      column: updated_at
+    createdAt:
+      type: datetime
+      column: created_at
